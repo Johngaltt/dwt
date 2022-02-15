@@ -57,16 +57,28 @@ html {
   a {
     font-size: 20px;
     color: #777;
-    text-decoration: none;
-    transition: all 0.45s;  
+    text-decoration: none;  
   }
 
   .header__list li {
-    width: 125px;
+    width: 168px;
     height: 100px;
-    transition: background-position-x 0.9s linear;
     text-align: center;
 } 
+
+  .header__link {
+  transition: 0.3s ease;
+  font-size: 20px;
+  text-decoration: none;
+  border-top: 4px solid #000000;
+  border-bottom: 4px solid #000000;
+  padding: 20px 0;
+}
+.header__link:hover {
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding: 6px 0; 
+}
 
 .main {
   grid-area: main;
@@ -96,6 +108,13 @@ html {
 	font-size: 40px;  
 	font-weight: bold;
   box-sizing: border-box;
+  padding: 0 5px;
+  box-shadow: inset 0 0 0 0 white;
+	transition: all 0.4s ease-in-out 0s;
+}
+h2.tabla__dertitulo:hover{
+  box-shadow: inset -300px 0 0 0 white;
+		color: #21242C;
 }
 
 h2.tabla__izqtitulo{
@@ -104,6 +123,14 @@ h2.tabla__izqtitulo{
 	font-size: 40px;  
 	font-weight: bold;
   box-sizing: border-box;
+  padding: 0 5px;
+	box-shadow: inset 0 0 0 0 white;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+h2.tabla__izqtitulo:hover{
+  box-shadow: inset 300px 0 0 0 white;
+		color: #21242C;
 }
 
  /* alinea textos ( center, left, right, justify) */
@@ -118,6 +145,14 @@ h2.tabla__izqtitulo{
   font-style: normal;
   font-family: 'Roboto'; 
   font-size: 2rem;
+  padding: 0 5px;
+	box-shadow: inset 0 0 0 0 white;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.tabla__txtder:hover{
+  box-shadow: inset -300px 0 0 0 white;
+		color: #21242C;
 }
 
 .tabla__txtizq{
@@ -125,6 +160,13 @@ h2.tabla__izqtitulo{
   font-family: 'Roboto';
   font-size: 2rem; 
   line-height: 30px;
+  padding: 0 5px;
+	box-shadow: inset 0 0 0 0 white;
+	transition: all 0.4s ease-in-out 0s;
+}
+.tabla__txtizq:hover{
+  box-shadow: inset 300px 0 0 0 white;
+		color: #21242C;
 }
 
 .formcontact{
