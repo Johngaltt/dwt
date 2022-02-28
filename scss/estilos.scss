@@ -1,4 +1,5 @@
 
+/*import*/
 @font-face {
 	font-family: 'Roboto';
 	src: url('../assets/font/Roboto-Light.ttf');
@@ -8,6 +9,12 @@
 	src: url('../assets/font/Roboto-Light.ttf');
 }
 
+/*Variables*/
+$font-page: 'Roboto';
+$color-purple:#663399;
+$fsize-navbar:110%;
+
+/*SCSS*/
 *{
   box-sizing: border-box;
   padding: 0;
@@ -22,13 +29,13 @@ html {
   box-sizing: border-box;  
   width: 100%;
   height: 100%;
-  font-family: "Roboto";
+  font-family: $font-page;
 }
 
 .p-5 {
-  background-color: rebeccapurple;
+  background-color:$color-purple;
 }
 
 .navbar {
-  font-size: 110%;
+  font-size: $fsize-navbar;
 }
