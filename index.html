@@ -57,18 +57,18 @@
         Un traje a tu medida, soluciones bajo demanda: Donde quieras, como quieras, cuando quieras.</p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
       <div class="btn-group-vertical">
-        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">PRODUCTOS</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Software Basic</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Software Medium</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Software Hard</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Software Nightmare</button>
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Crea tu software totalmente personalizado!">PRODUCTOS</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="tooltip" data-bs-placement="left" title="Programas simples, recomendado para negocios pequeños">Software Basic</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="tooltip" data-bs-placement="left" title="Programas que requieren mas funciones, recomendado para Pymes">Software Medium</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="tooltip" data-bs-placement="left" title="Programas complejos, recomendado para Grandes Empresas">Software Hard</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="tooltip" data-bs-placement="left" title="Un sistema compuesto por varias partes interconectadas o entrelazadas cuyos vínculos crean información adicional no visible ante el observador como resultado de las interacciones entre elementos.">Software Nightmare</button>
       </div>
       <div class="btn-group-vertical">
-        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">SERVICIOS</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Logisitcs</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Reverse Engineering</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Data Analytic</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Anti Pishing</button>   
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Nuestos servicios en tu empresa!">SERVICIOS</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="tooltip" data-bs-placement="right" title="Una solución digital que facilita y mejora la eficiencia de todo el proceso de la cadena de suministro.">Logisitcs</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="tooltip" data-bs-placement="right" title="Permite lanzar el proceso de producción con mayor rapidez, además de ahorrarse en el proceso de corrección de herramientas al menos un 50 % de bucles iterativos. Utilice el software no solo para correcciones en puntos concretos, sino para hacer correcciones en toda la herramienta.">Reverse Engineering</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="tooltip" data-bs-placement="right" title="No es un software, sino que se trata de un grupo de tareas para identificar la necesidad del negocio a fin de trabajar en su solución. Para eso, las personas que tienen habilidades para el análisis de datos utilizan herramientas y tienen criterio para determinar las métricas que deben ser tenidas en cuenta ya que no todas son válidas. ">Data Analytic</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="tooltip" data-bs-placement="right" title="El software anti-phishing consiste en programas de computadora que intentan identificar el contenido de phishing contenido en sitios web, correo electrónico u otras formas utilizadas para acceder a los datos y bloquear el contenido, generalmente con una advertencia para el usuario.">Anti Pishing</button>   
       </div>
       </div>
         </div>
@@ -104,5 +104,12 @@
 
     <!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+  </script>
+
 </body>
 </html>
