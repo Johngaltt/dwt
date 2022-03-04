@@ -11,8 +11,19 @@
 
 /*Variables*/
 $font-page: 'Roboto';
-$color-purple:#663399;
-$fsize-navbar:110%;
+$fsize-navbar:120%;
+$primary: #533E85;
+$secondary: #488FB1;
+$dark:#171f22;
+
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "dark": $dark,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 /*SCSS*/
 *{
@@ -22,20 +33,64 @@ $fsize-navbar:110%;
   letter-spacing: 1.5px;
 }
 
+/*SIZES*/
+@mixin sizes ($width,$heigh,$font) {
+  height:$heigh;
+  width: $width;
+  font-size: $font;
+}
+
 body,
 html {
+  @include sizes(100%,100%,100%);
   overflow-x: hidden;
-  font-size: 100%;
-  box-sizing: border-box;  
-  width: 100%;
-  height: 100%;
+  box-sizing: border-box; 
   font-family: $font-page;
 }
 
-.p-5 {
-  background-color:$color-purple;
-}
+
 
 .navbar {
   font-size: $fsize-navbar;
+}
+
+/*MAP Boton Primario*/
+
+$botonp: (
+colortext:#ffffff,
+colorb:#488FB1,
+tFuente:30px,
+wFuente:bold
+);
+
+.btn-primary {
+  color: map-get($botonp,colortext);
+  background-color: map-get($botonp, colorb);
+  font-weight: map-get($botonp, wFuente); 
+  font-size: map-get($botonp, tFuente);
+&:hover{
+  background-color: map-get($botonp, colorb);
+  border-color: map-get($botonp, colorb);
+}
+&:focus{
+  background-color: map-get($botonp, colorb);
+}
+}
+
+/*MAP Boton Secundario*/
+$botons: (
+colortext:#525050,
+colorb:#4FD3C4,
+tFuente:20px,
+wFuente:bold
+);
+
+.btn-outline-secondary{
+  color: map-get($botons,colortext);
+  font-weight: map-get($botons, wFuente); 
+  font-size: map-get($botons, tFuente); 
+&:hover{
+  @extend .btn-outline-secondary;
+  background-color:  map-get($botons, colorb);
+}
 }
