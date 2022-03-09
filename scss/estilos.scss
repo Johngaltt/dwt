@@ -94,3 +94,10 @@ wFuente:bold
   background-color:  map-get($botons, colorb);
 }
 }
+.carrusel {
+  width: 50%;
+  margin: auto;
+}
+.carousel-inner img {
+  margin: auto;
+}

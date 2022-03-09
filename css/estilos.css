@@ -7433,3 +7433,10 @@ html {
   font-size: 20px; }
   .btn-outline-secondary:hover {
     background-color: #4FD3C4; }
+
+.carrusel {
+  width: 50%;
+  margin: auto; }
+
+.carousel-inner img {
+  margin: auto; }

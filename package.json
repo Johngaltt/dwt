@@ -1,7 +1,7 @@
 {
-  "name": "web",
-  "version": "1.0.0",
-  "description": "dwt",
+  "name": "dwt",
+  "version": "3.0.0",
+  "description": "DWT proyecto simula pagina de venta de software a medida, desarrollo propio y servicios informaticos para perosonas, pymes y grandes empresas",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
