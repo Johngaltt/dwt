@@ -12,8 +12,9 @@
 /*Variables*/
 $font-page: 'Roboto';
 $fsize-navbar:120%;
-$primary: #533E85;
+$primary: #533E85;    
 $secondary: #488FB1;
+$tertiary:#4FD3C4;
 $dark:#171f22;
 
 
@@ -21,6 +22,7 @@ $theme-colors: (
     "primary": $primary,
     "secondary": $secondary,
     "dark": $dark,
+    "tertiary": $tertiary,
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap";
